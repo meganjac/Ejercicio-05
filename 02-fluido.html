@@ -12,17 +12,23 @@
 #header{
     text-align: center;
 }
-        
-#resumen{
+
+#texto_completo{
     width: 80%;
-    margin-inline: auto;
+}
+#resumen{
+    width: 75%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    left: 25%;
 }
         
 article{
     width: 75%;
     display: inline-block;
     position: relative;
-    left: 40%;
+    left: 25%;
     padding-left: 20px; /*con tal de mantener espaciadas ambas columnas*/
 }
         
@@ -31,8 +37,7 @@ aside{
     display: inline-block;
     vertical-align: top;
     position: relative;
-    left: 5%; 
-
+    left: -75%; 
 }
         
 #personajes{
@@ -53,8 +58,8 @@ div{
     <header id="header">
         <h1>Viaje al centro de la Tierra</h1>
     </header>
-            
-    <div id="resumen">
+    <div id="texto_completo">        
+        <div id="resumen">
         <article>
             <h2>Resumen</h2>
                 <p>La novela cuenta la historia de Axel, quien vive con su tío Otto Lidenbrock en Hamburgo. Después de descifrar un
@@ -102,6 +107,7 @@ div{
                     <li>País: Francia</li>
                     <li>Páginas: 360</li>
             </ul>
-        </aside>  
+        </aside>
+    </div>
     </body>
 </html>
